@@ -1,7 +1,7 @@
 #static code analysis by sonarqube  
 /opt/sonar-scanner/bin/sonar-scanner \
-
-  - name: 'gcr.io/$PROJECT_ID/sonar-scanner:latest'
+  steps:
+  - name: 'gcr.io/sonarqube/sonar-scanner:latest'
     args:
     - '-Dsonar.host.url=http://35.190.148.217:9000' \
     - '-Dsonar.login=3378bda3532b045ce559432e5eafcc2fea7a1b36' \
