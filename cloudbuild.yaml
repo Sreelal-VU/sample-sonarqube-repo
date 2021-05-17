@@ -1,6 +1,4 @@
-
-
- sonarqube:
+sonarqube:
     type: "sonar-scanner-cli"
     stage: "push"
     arguments:
